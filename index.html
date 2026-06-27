@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>all roads lead to you.</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<section id="login">
+
+    <div class="login-card">
+
+        <h1>all roads lead to you.</h1>
+
+        <p class="subtitle">
+            one tiny code before you enter. 🤍
+        </p>
+
+        <input
+        type="password"
+        id="password"
+        placeholder="enter code">
+
+        <button onclick="checkPassword()">
+            enter
+        </button>
+
+        <div class="envelope-box">
+
+            <div class="envelope" onclick="toggleHint()">
+
+                💌
+
+            </div>
+
+            <div id="hint" class="hint">
+
+                <h3>hint</h3>
+
+                <p>the day we first started talking.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="welcome" class="hidden">
+
+    <div class="fade">
+
+        <h1 class="there">
+            there you are.
+        </h1>
+
+        <p class="waiting">
+            i've been waiting for you.
+        </p>
+
+    </div>
+
+</section>
+
+<section id="music" class="hidden">
+
+    <div class="music-card">
+
+        <h2>
+            🎵 soundtrack of this website.
+        </h2>
+
+        <p>
+            press play before continuing. 🤍
+        </p>
+
+        <iframe
+        style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/6rY5FAWxCdAGllYEOZMbjW?utm_source=generator&si=5f2421762e38436e"
+        width="100%"
+        height="352"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+        </iframe>
+
+        <button id="continueBtn">
+            continue ↓
+        </button>
+
+    </div>
+
+</section>
+
+<section id="letter" class="hidden">
+
+    <!-- NEXT PAGE -->
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<!-- NEXT PAGE -->
+<div class="letter-card">
+
+<h2>hey, L 🤍</h2>
+
+<p>
+you're my home in every storm,
+my comfort in every ache,
+and my safe place in every moment.
+</p>
+
+<p>
+if life asked me a thousand times,
+i'd still choose you.
+every universe.
+every timeline.
+every single time.
+</p>
+
+<p>
+thank you for being my favourite person.
+thank you for existing.
+thank you for becoming my home.
+</p>
+
+<p class="sign">
+with all my love,
+♡
+</p>
+
+<button onclick="showPolaroids()">
+our memories ↓
+</button>
+
+</div>
+
+<section id="polaroids" class="hidden">
+
+<h2>our little memories 📸</h2>
+
+<div class="polaroid-grid">
+
+<div class="polaroid">
+<img src="hug.jpg">
+<p>this is where i belong 🫂</p>
+</div>
+
+<div class="polaroid">
+<img src="dino.jpg">
+<p>rawr 🦖</p>
+</div>
+
+<div class="polaroid">
+<img src="photobooth.jpg">
+<p>proof we can make anything fun 😭</p>
+</div>
+
+<div class="polaroid">
+<img src="webcam.jpg">
+<p>certified cuties 🌛🍓</p>
+</div>
+
+<div class="polaroid">
+<img src="illustration.jpg">
+<p>we look so kuchu puchu together 🥹</p>
+</div>
+
+</div>
+
+<button onclick="showFlipCards()">
+flip memories →
+</button>
+
+</section>
+
+<section id="flipcards" class="hidden">
+
+<h2>flip our memories 🤍</h2>
+
+<div class="flip-grid">
+
+<div class="flip-card">
+
+<div class="flip-inner">
+
+<div class="flip-front">
+<img src="hug.jpg">
+</div>
+
+<div class="flip-back">
+this is where i belong 🤍
+</div>
+
+</div>
+
+</div>
+
+<div class="flip-card">
+
+<div class="flip-inner">
+
+<div class="flip-front">
+<img src="dino.jpg">
+</div>
+
+<div class="flip-back">
+rawr. 🦖
+
+(translation: i love you.)
+</div>
+
+</div>
+
+</div>
+
+<div class="flip-card">
+
+<div class="flip-inner">
+
+<div class="flip-front">
+<img src="photobooth.jpg">
+</div>
+
+<div class="flip-back">
+proof we can make anything fun. 😝
+</div>
+
+</div>
+
+</div>
+
+</div>
+<section id="loveMeter" class="hidden">
+
+<h2>how much do i love you? 🤍</h2>
+
+<div class="meter-box">
+
+<div class="meter">
+<div id="fill"></div>
+</div>
+
+<p id="percent">0%</p>
+
+<button onclick="startLoveMeter()">
+calculate 🤍
+</button>
+
+</div>
+
+<div id="popup" class="popup">
+
+<div class="popup-card">
+
+<h2>⚠ LOVE METER</h2>
+
+<p>
+
+System crashed.
+
+<br><br>
+
+Unable to calculate.
+
+<br><br>
+
+Reason:
+
+<br>
+
+Subject keeps making
+
+the owner fall
+
+more in love. 🤍
+
+</p>
+
+<button onclick="closePopup()">
+OK
+</button>
+
+</div>
+
+</div>
+
+</section>
+<section id="hugSection">
+
+<h2>claim your free hug. 🫂</h2>
+
+<button id="hugBtn">
+claim 🤍
+</button>
+
+<div id="hugBox" class="hidden">
+
+<div class="hugEmoji">
+🫂
+</div>
+
+<h3>hug delivered successfully.</h3>
+
+<p>no refunds. 🤍</p>
+
+</div>
+
+</section>
+
+<section id="ending">
+
+<h1>that's all. 🤍</h1>
+
+<p>
+i just wanted to remind you
+that i love you.
+</p>
+
+<div class="ending-card">
+
+<p>
+website completed successfully.
+</p>
+
+<p>
+boyfriend appreciated:
+<strong>pending. 🤨</strong>
+</p>
+
+</div>
+
+<h2>
+if you've read everything...
+</h2>
+
+<p>
+you owe me a hug. 🫂
+</p>
+
+</section>
+<p class="mwah">
+mwah. 🤍
+</p>
+<div class="hearts">
+🤍 🤍 ✨ 🤍 🌙 🍓
+</div>
+<div id="goodbye" class="hidden">
+
+<h2>thank you</h2>
+
+<p>
+for making my world
+a little softer. 🤍
+</p>
+
+<h3>
+see you
+in every lifetime.
+</h3>
+
+<p class="mwah">
+mwah. 🤍
+</p>
+
+<button id="restartBtn">
+↺ all roads lead to you.
+</button>
+
+</div>
